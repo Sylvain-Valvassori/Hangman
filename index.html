@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sylvain valvassori">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+<body>
+
+
+    <section class="container">
+        <header>
+            <h1>Hangman</h1>
+            <h2>Vous avez droit à 5 erreurs avant de perdre. Have fun !</h2>
+            <p>Erreurs <span id="compteur">0</span>/5</p>
+        </header>
+
+        <section class="answer">
+            <h3>Le mot : <span id="mot"></span></h3>
+            <div id="containerWordLetters"></div>
+        </section>
+
+        <main class="content">
+            <section class="inputContainer"> 
+                <label type="text" for="letters" id="label">Entré une lettre</label>
+                <input type="text" name="userLetter" placeholder="Entrez une lettre" id="userLetter" maxlength="1">
+                <!-- <button type="button" onclick="getInputValue();">Send</button> -->
+            </section>
+            <section class="showLetters">
+                <h3>Lettres que vous avez déjà jouées</h3>
+                <section class="containerLettersPlay"></section>
+            </section>
+        </main>
+    </section>
+
+
+
+</body>
+<script src="./assets/js/hangman.js"></script>
+
+</html>

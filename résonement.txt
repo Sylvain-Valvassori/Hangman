@@ -1,0 +1,45 @@
+====================================[Game init]=======================
+
+- tableau avec des mots
+- générer un mot du tableau random
+    --> stock le mot dans une VARIABLE
+    --> calculer le nombre de letttres que contient le mot choisi
+    --> stock la taille du mots
+    --> affiche le nombre de letttres
+
+
+====================================[User entre valeur]=======================
+
+- le user entre une valeur comprise entre A et Z
+--> stock la valeur dans un TABLEAU
+
+--> TEST SI la valeur existe déja
+    --> SI oui 
+        => NE PAS AFFICHER LA VALEUR (option afficher un message "valeur déja entrée")
+    --> Si NON alors je lance la fonction avec la batterie de test
+
+
+====================================[Batterie de TEST]=======================
+
+--> TEST SI la valeur est comprise dans le mot choisi
+    --> SI OUI 
+        --> TEST SI la valeur est comprise plusieurs fois dans le mot choisi
+            --> SI OUI alors j'affiche la valeur * le nombre de fois qu'elle existe
+                => AFFICHE 1 --> à sa place dans le mot choisi
+                => STOCKER   --> dans un tableau(lettres utilisées)
+                => AFFICHE 2 --> dans les lettres UTILISÉES 
+            --> SINON j'affiche une seule fois
+                => AFFICHE 1 --> à sa place dans le mot choisi
+                => STOCKER   --> dans un tableau(lettres utilisées)
+                => AFFICHE 2 --> dans les lettres UTILISÉES 
+
+    --> SI NON
+        --> je monte le compteur d'erreur de +1
+            --> SI LE COMPTEUR à atteint la valeur max ALORS AFFICHER Game Over + [Try again](le try again reload la page)
+            --> SINON
+                => AFFICHE 1 --> le nombre d'erreurs restantes
+                => STOCKER   --> dans un tableau(lettres utilisées)
+                => AFFICHE 2 --> dans les lettres UTILISÉES 
+
+
+=============================================================================
